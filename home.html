@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Complete HTML &amp; CSS Demo</title>
+  </head>
+
+  <body>
+    <header id="main-header">
+      <h1 class="site-title">My Learning Website</h1>
+      <p class="tagline">HTML and CSS Practice Page</p>
+    </header>
+
+    <nav id="navbar">
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h2 class="section-title">About This Website</h2>
+
+      <p>
+        This page demonstrates many HTML elements including
+        <a href="https://www.google.com" target="_blank">external links</a>
+        and images.
+      </p>
+
+      <img
+        class="profile-image"
+        src="IMG_8762.jpg"
+        alt="Profile Image"
+        height="300px"
+        width="300px"
+      />
+
+      <h3>Our Services</h3>
+
+      <ul class="service-list">
+        <li>Web Design</li>
+        <li>Programming Lessons</li>
+        <li>IT Support</li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2 class="section-title">Course Table</h2>
+
+      <table id="course-table">
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Level</th>
+        </tr>
+
+        <tr>
+          <td>HTML</td>
+          <td>4 Weeks</td>
+          <td>Beginner</td>
+        </tr>
+
+        <tr>
+          <td>CSS</td>
+          <td>4 Weeks</td>
+          <td>Beginner</td>
+        </tr>
+
+        <tr>
+          <td>JavaScript</td>
+          <td>6 Weeks</td>
+          <td>Intermediate</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="content">
+      <h2 class="section-title">Contact Form</h2>
+
+      <form id="contact-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label>Name:</label><br />
+          <input type="text" class="input-box" /><br /><br />
+
+          <label>Email:</label><br />
+          <input type="email" class="input-box" /><br /><br />
+
+          <label>Gender:</label><br />
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Skills</legend>
+
+          <input type="checkbox" /> HTML<br />
+          <input type="checkbox" /> CSS<br />
+          <input type="checkbox" /> JavaScript<br />
+          <input type="checkbox" /> Python
+        </fieldset>
+
+        <br />
+
+        <label>Message</label><br />
+        <textarea rows="4" class="input-box"></textarea><br /><br />
+
+        <button class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <footer id="main-footer">
+      <p class="footer-text">
+        Visit our <a href="#">Help Center</a> or follow us online.
+      </p>
+
+      <p>&copy; 2026 HTML And CSS Practice</p>
+    </footer>
+  </body>
+</html>

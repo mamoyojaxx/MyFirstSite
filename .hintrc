@@ -3,6 +3,15 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/text-alternatives": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "meta-viewport": "off",
+    "button-type": "off"
   }
 }

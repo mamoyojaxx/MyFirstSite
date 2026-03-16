@@ -1,0 +1,168 @@
+/* Page styling */
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+/* Header */
+
+#main-header{
+    background:#4CAF50;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.site-title{
+    font-size:36px;
+}
+
+.tagline{
+    font-style:italic;
+}
+
+/* Navigation */
+
+#navbar{
+    background:#333;
+}
+
+.nav-menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:10px;
+}
+
+.nav-menu li{
+    margin:0 15px;
+}
+
+.nav-menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.nav-menu a:hover{
+    color:yellow;
+}
+
+/* Sections */
+
+.content{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:8px;
+}
+
+.section-title{
+    color:#4CAF50;
+}
+
+/* Image */
+
+.profile-image{
+    width:300px;
+    border-radius:10px;
+    border:3px solid #ddd;
+}
+
+/* Lists */
+
+.service-list{
+    padding-left:20px;
+}
+
+/* Table */
+
+#course-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+#course-table th{
+    background:#4CAF50;
+    color:white;
+}
+
+#course-table th,
+#course-table td{
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+/* Form */
+
+#contact-form{
+    margin-top:10px;
+}
+
+fieldset{
+    border:2px solid #4CAF50;
+    padding:15px;
+}
+
+legend{
+    font-weight:bold;
+    color:#4CAF50;
+}
+
+.input-box{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    resize:vertical;
+}
+
+/* Button */
+
+.submit-btn{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:10px 20px;
+}
+
+.submit-btn:hover{
+    background:#2e7d32;
+}
+
+/* Footer */
+
+#main-footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+#main-footer a{
+    color:lightblue;
+}
+
+#main-footer a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+    .nav-menu{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .profile-image{
+        width:100%;
+    }
+
+}
