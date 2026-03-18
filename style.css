@@ -118,13 +118,10 @@ legend {
   margin-top: 5px;
   border: 1px solid #3b3a3a;
 }
-
 textarea {
   resize: vertical;
 }
-
 /* Button */
-
 .submit-btn {
   background: #4caf50;
   color: white;
@@ -133,7 +130,8 @@ textarea {
 }
 
 .submit-btn:hover {
-  background: #2e7d32;
+  color: #4caf50;
+  background: white;
 }
 
 /* Footer */
