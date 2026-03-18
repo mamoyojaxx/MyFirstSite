@@ -1,93 +1,132 @@
 <!doctype html>
-<!--comment here-->
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First Site</title>
+    <meta charset="utf-8" />
+    <title>Complete HTML &amp; CSS Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>First Site</h1>
+    <header id="main-header">
+      <h1 class="site-title">My Learning Website</h1>
+      <p class="tagline">HTML and CSS Practice Page</p>
     </header>
-    <main>
-      <h6>The standard Lorem Ipsum passage, used since the 1500s</h6>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
-      </p>
-      <h6>
-        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in
-        45 BC
-      </h6>
-      <p>
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-        voluptas nulla pariatur?"
-      </p>
-      <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ol>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+
+    <nav id="navbar">
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <a href="https://github.com/mamoyojaxx" target="_blank">GitHub Profile</a
-      ><br />
+    </nav>
+
+    <section class="content">
+      <h2 class="section-title">About This Website</h2>
+
+      <p>
+        This page demonstrates many HTML elements including
+        <a href="https://www.google.com" target="_blank">external links</a>
+        and images.
+      </p>
+
       <img
-        src="IMG_8762.JPG"
-        alt="Graduation Photo "
+        class="profile-image"
+        src="IMG_8762.jpg"
+        alt="Profile Image"
         height="300px"
         width="300px"
-      /><br />
-      <audio controls>
-        <source src="08 Azyet - Hard To Say I'm Sorry.mp3" type="audio/mpeg" />
-        <source src="08 Azyet - Hard To Say I'm Sorry.ogg" type="audio/ogg" />
-        Your browser does not support the audio element.
-      </audio>
-      <video controls width="400px" height="400px">
-        <source src="00042.mp4" type="video/mp4" />
-        Your browser does not support the video element.</video
-      ><br />
-      <h3>Form Elements</h3>
-      <form action="mailto:jacqueline@itca.co.za">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" />
+      />
+
+      <h3>Our Services</h3>
+
+      <ul class="service-list">
+        <li>Web Design</li>
+        <li>Programming Lessons</li>
+        <li>IT Support</li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2 class="section-title">Course Table</h2>
+
+      <table id="course-table">
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Level</th>
+        </tr>
+
+        <tr>
+          <td>HTML</td>
+          <td>4 Weeks</td>
+          <td>Beginner</td>
+        </tr>
+
+        <tr>
+          <td>CSS</td>
+          <td>4 Weeks</td>
+          <td>Beginner</td>
+        </tr>
+
+        <tr>
+          <td>JavaScript</td>
+          <td>6 Weeks</td>
+          <td>Intermediate</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="content">
+      <h2 class="section-title">Contact Form</h2>
+
+      <form id="contact-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label>Name:</label><br />
+          <input type="text" class="input-box" /><br /><br />
+
+          <label>Email:</label><br />
+          <input type="email" class="input-box" /><br /><br />
+
+          <label>Gender:</label><br />
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female
+        </fieldset>
+
         <br />
-        <label for="Gender">Gender:</label><br />
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label>
+
+        <fieldset>
+          <legend>Skills</legend>
+
+          <input type="checkbox" /> HTML<br />
+          <input type="checkbox" /> CSS<br />
+          <input type="checkbox" /> JavaScript<br />
+          <input type="checkbox" /> Python
+        </fieldset>
+
         <br />
-        <label for="Skills">Skills:</label><br />
-        <input type="checkbox" id="skill1" name="skills" value="JavaScript" />
-        <label for="skill1">JavaScript</label>
-        <input type="checkbox" id="skill2" name="skills" value="Python" />
-        <label for="skill2">Python</label>
-        <input type="checkbox" id="skill3" name="skills" value="Java" />
-        <label for="skill3">Java</label>
-        <br />
-        <input type="submit" value="Submit" />
+
+        <label>Message</label><br />
+        <textarea rows="4" class="input-box"></textarea><br /><br />
+
+        <button class="submit-btn">Submit</button>
       </form>
-    </main>
+    </section>
+
+    <footer id="main-footer">
+      <p class="footer-text">
+        Visit our <a href="#">Help Center</a> or follow us online.
+      </p>
+
+      <p>&copy; 2026 HTML And CSS Practice</p>
+    </footer>
   </body>
 </html>
